@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+body {
+    padding: 0 clamp(.75rem, -0.68rem + 6.1vw, 4.813rem);
+    margin: 0 7vw;
+}
+
+.conteiner__header {
+    padding-top: 30px;
+}
+
+.header__title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.conteiner__desc {
+    display: flex;
+    align-items: first baseline;
+    gap: 18px;
+}
+
+.desc__recipe {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: .88rem;
+    max-width: 592px;
+    width: 100%;
+}
+
+.photo__img {
+    margin-top: 40px;
+    object-fit: cover;
+}
+
+@media (min-width: 1441px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteiner__main {
+        display: flex;
+        width: 1200px;
+    }
+
+    .header__title {
+        font-size: 5rem;
+    }
+
+    .desc__recipe {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0 clamp(.75rem, -0.68rem + 4.1vw, 4.813rem);
+    }
+}
+
+@media (max-width: 615px) {
+    .header__title {
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .conteiner__header {
+        padding-top: 15px;
+    }
+
+    .header__title {
+        font-size: 1.5rem;
+    }
+
+    .desc__recipe {
+        font-size: .75rem;
+    }
+
+    .photo__img {
+        margin-top: 25px;
+        border-radius: 15px;
+    }
+}
+
+/*------------------ main ----------------------*/
+
+.conteiner__main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.conteiner__menu {
+    margin-top: 40px;
+    max-width: 216px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.081);
+}
+
+.menu__item {
+    padding: 45px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item {
+    padding: 10px 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.servings {
+    color: #F2994A;
+    padding-top: 2px;
+}
+
+.desc {
+    color: #BDBDBD;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    font-size: .65rem;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+}
+
+.desc__time {
+    padding-top: 2px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: .88rem;
+}
+
+@media (max-width: 890px) {
+    .conteiner__main {
+        flex-direction: column;
+    }
+
+    .conteiner__menu {
+        margin: 0;
+        max-width: 890px;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .menu__item {
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .menu__item .item:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .item {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu__item {
+        padding: 5px 0;
+    }
+
+    .item {
+        padding: 5px;
+    }
+
+    .desc {
+        font-size: .50rem;
+    }
+
+    .servings {
+        font-size: .65rem;
+    }
+
+    .desc__time {
+        font-size: .65rem;
+    }
+
+    .svg__img {
+        width: 28px;
+    }
+}
+
+@media (max-width: 374px) {
+    .item {
+        gap: 5px;
+    }
+}
+
+.conteiner__second {
+    margin-top: 40px;
+}
+
+@media (max-width: 890px) {
+    .conteiner__second {
+        margin-top: 20px;
+    }
+}
