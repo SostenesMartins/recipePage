@@ -160,6 +160,26 @@ body {
     font-size: .88rem;
 }
 
+@media (min-width: 1441px) {
+
+    .conteiner__menu {
+        max-width: 270px;
+        max-height: 430px;
+    }
+
+    .svg__img {
+        width: 45px;
+    }
+
+    .desc {
+        font-size: 1rem;
+    }
+
+    .desc__time {
+        font-size: 1.13rem;
+    }
+}
+
 @media (max-width: 890px) {
     .conteiner__main {
         flex-direction: column;
@@ -381,7 +401,7 @@ span {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 470px) {
     .desc__ingredients {
         font-size: .75rem;
     }
