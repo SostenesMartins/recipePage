@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display&family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat:wght@400;700&family=Playfair+Display&family=Roboto:wght@500&display=swap');
 
 * {
     padding: 0;
@@ -67,6 +71,7 @@ body {
 
     .desc__recipe {
         font-size: 1.5rem;
+        max-width: 900px;
     }
 }
 
@@ -102,7 +107,7 @@ body {
     }
 }
 
-/*------------------ main ----------------------*/
+/*------------------ main menu ----------------------*/
 
 .conteiner__main {
     display: flex;
@@ -115,6 +120,7 @@ body {
     margin-top: 40px;
     max-width: 216px;
     width: 100%;
+    max-height: 375px;
     border-radius: 10px;
     box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.081);
 }
@@ -214,12 +220,197 @@ body {
     }
 }
 
+/* ----------------- main ingredients / instructions ------------------ */
+
 .conteiner__second {
     margin-top: 40px;
 }
 
 @media (max-width: 890px) {
     .conteiner__second {
-        margin-top: 20px;
+        margin-top: 0px;
     }
+}
+
+.second__title {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+}
+
+.topic__ingredients {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.13rem;
+    margin-bottom: 35px;
+}
+
+.ingredients__item {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.box__ingredients {
+    margin-bottom: 35px;
+}
+
+.box {
+    border: 1px solid #000;
+    border-radius: 4px;
+    max-width: 25px;
+    width: 100%;
+    height: 25px;
+}
+
+.desc__ingredients {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    max-width: 500px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .desc__ingredients {
+        max-width: 100%;
+    }
+}
+
+span {
+    font-weight: bold;
+}
+
+.third__title {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+}
+
+.instructions__item {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.box__number {
+    border: 1px solid #F2994A;
+    border-radius: 4px;
+    background-color: #F2994A;
+    max-width: 32px;
+    width: 100%;
+    height: 32px;
+}
+
+.number {
+    font-size: 26px;
+    text-align: center;
+    font-family: 'Montez', cursive;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.desc__instructions {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    max-width: 500px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .desc__instructions {
+        max-width: 100%;
+    }
+}
+
+.source {
+    margin: 40px 0;
+}
+
+.source__link {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    color: #BDBDBD;
+    font-size: 1rem;
+}
+
+@media (min-width: 1441px) {
+    .second__title {
+        font-size: 3rem;
+    }
+
+    .topic__ingredients {
+        font-size: 2rem;
+    }
+
+    .third__title {
+        font-size: 3rem;
+    }
+
+    .desc__ingredients {
+        font-size: 1.5rem;
+    }
+
+    .desc__instructions {
+        font-size: 1.5rem;
+    }
+
+    .source__link {
+        font-size: 1.5rem;
+    }
+
+    .ingredients__item {
+        margin: 60px 0;
+    }
+
+    .desc__ingredients {
+        max-width: 700px;
+    }
+
+    .instructions__item {
+        margin: 60px 0;
+    }
+
+    .desc__instructions {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 425px) {
+    .desc__ingredients {
+        font-size: .75rem;
+    }
+
+    .desc__instructions {
+        font-size: .75rem;
+    }
+
+    .source__link {
+        font-size: .75rem;
+    }
+}
+
+/* --------------------- footer ------------------------- */
+
+.conteiner__footer {
+    padding: 50px 0 10px 0;
+}
+
+.footer__copyright {
+    text-align: center;
+    color: #828282;
+    font-size: .88rem;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.copyright__owner {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
 }
